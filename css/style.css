@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.    woff2") format("woff2");
+  font-weight: 500;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.    woff2") format("woff2");
+  font-weight: 100;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.    woff2") format("woff2");
+  font-weight: 300;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans-ExtraBold.    woff2") format("woff2");
+  font-weight: 700;
+  font-size: normal;
+}
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #ff7f1777;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+.main {
+  background-image: url(../img/bg2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50% 0px 0px 0px;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 42.2%;
+  margin: -6.79% 0 0 0px;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+}
+
+.buttons__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons__link {
+  background: #ff7f17;
+  border: 0;
+  border-radius: 50px;
+  margin-top: 8.168%;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: calc(0.01063 * 100vw + 1.6px);
+  padding: 2.278% 1.754%;
+  width: 49.25%;
+  text-align: center;
+}
+
+.buttons__right {
+  float: right;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.buttons__right a {
+  padding-right: 10.5%;
+  padding-left: 10.5%;
+}
+
+.main-bg1 {
+  background-image: url(../img/bg1.png);
+}
+
+.form__content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  width: 41%;
+  padding: 1.31% 0px 2.358%;
+  border-radius: 20px;
+}
+
+.form__title {
+  color: #fff;
+  font-size: calc(0.01063 * 100vw + 1.6px);
+  font-family: OpenSans;
+  font-weight: 300;
+  margin: 0px 0px 5% 0px;
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__input {
+  border: 3px solid #ff7f17;
+  width: 16.1vw;
+  height: 3.44vw;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  margin: 0px 0px 6.42% 0px;
+  color: #fff;
+  font-family: OpenSans;
+  font-weight: 300;
+  font-size: calc(0.01063 * 100vw + 1.6px);
+}
+
+.form__input::-moz-placeholder {
+  color: #fff;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input::placeholder {
+  color: #fff;
+}
+
+.form__button {
+  width: 16.1vw;
+  height: 3.44vw;
+  background: #ff7f17;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.01063 * 100vw + 1.6px);
+}
+
+.main-bg3 {
+  background-image: url(../img/bg3.png);
+}
+
+.schedule {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 75%;
+  display: grid;
+  grid-template-areas: "top top" "bottoml1 bottomr1" "bottoml2 bottomr2" "bottoml3 bottomr3" "bottoml4 bottomr4" "bottoml5 bottomr5" "bottoml6 bottomr6" "bottoml7 bottomr7" "bottoml8 bottomr8" "bottoml9 bottomr9";
+}
+
+.schedule__title {
+  width: 100%;
+  height: 50%;
+  background-color: #ff7f17;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: calc(0.01063 * 100vw + 1.6px);
+  font-family: OpenSans;
+  text-transform: uppercase;
+}
+
+.schedule__title--left {
+  margin-left: 15%;
+  padding-left: 12%;
+}
+
+.schedule__title--right {
+  width: 100%;
+  padding-left: 15%;
+}
+
+.schedule__item {
+  display: flex;
+  justify-content: flex-start;
+  color: #000;
+  font-family: OpenSans;
+  font-size: calc(0.01063 * 100vw + 1.6px);
+  text-align: left;
+  padding-left: 15%;
+  font-weight: 300;
+}
+
+.schedule__item--bold {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.schedule__item--orange {
+  font-weight: 700;
+  color: #ff7f17;
+}
+
+.timer {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 46.85%;
+  border: 0.625vw solid #ff7f17;
+  border-radius: 1.04vw;
+}
+
+#tiles {
+  display: flex;
+  justify-content: center;
+}
+
+#tiles span {
+  width: 16%;
+  height: 16%;
+  font: bold calc(0.04375 * 100vw + 1px) "Droid Sans", Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  background-color: #ff7f17;
+  background-image: -ms-linear-gradient(top, #bbb, #eee);
+  background-image: #ff7f17;
+  border-top: 1px solid #fff;
+  border-radius: 1.04vw;
+  box-shadow: 0 0 12px #ff7f17;
+  margin: 0 0.8%;
+  padding: 2% 0;
+  display: inline-block;
+  position: relative;
+  margin-top: 8% !important;
+  margin-left: 5% !important;
+}
+
+#tiles span::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ff7f17;
+  border-top: 0.052vw solid #333;
+  display: block;
+  position: absolute;
+  top: 48%;
+  left: 0;
+}
+
+.label {
+  display: flex;
+  color: #ff7f17;
+  font-size: calc(0.0175 * 100vw + -0.6px);
+  font-family: OpenSans;
+  font-weight: 300;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  margin-top: 2%;
+}
+
+@media (min-width: 1080px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  .main {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    margin-top: 40%;
+  }
+}
